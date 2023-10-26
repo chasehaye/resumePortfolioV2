@@ -1,0 +1,1 @@
+will later add some basic strcture break down from my other pages to explain my process
