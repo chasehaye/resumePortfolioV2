@@ -1,16 +1,43 @@
+body {
+    margin: 0 auto;
+    background-image: url("mountainsandclouds3a.jpg");
+    background-color: white;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: var(--text)
+}
 /* style for name/ landing page */
 .title_page {
-    color: black
+    height: 100vh;
+}
+#title_info_container {
+    margin-top: 45vh;
+}
+#name {
+    margin-top: 0;
+    text-align: center;
+}
+#description {
+    margin-top: 0;
+    text-align: center;
 }
 /* style for first project page */
 .project_one {
-    color: black
+    color: var(--text)
 }
 /* style for second project page */
 .project_two{
-    color: black
+    color: var(--text)
 }
 /* style for third project page */
 .project_three {
-    color: black
+    color: var(--text)
+}
+
+
+
+:root{
+    --text: maroon;
 }
