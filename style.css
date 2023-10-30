@@ -1,43 +1,78 @@
+/* Main Pages */
+html {
+    scroll-snap-type: mandatory;
+    scroll-snap-type: y mandatory;
+}
 body {
     margin: 0 auto;
     background-image: url("mountainsandclouds3a.jpg");
+    background-attachment: fixed;
     background-color: white;
     height: 100%;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    color: var(--text)
+    display: inline-flex;
 }
-/* style for name/ landing page */
-.title_page {
-    height: 100vh;
+.page {
+
+    padding: 1rem;
+    height: 70vh;
+    scroll-snap-align: start;
+    text-align: center;
+    position: relative;
+}
+#main {
+    width: 97.5vw;
+}
+/* NavBar */
+nav {
+    width: 1.5vw;
+}
+#nav_text {
+    margin-top: 50vh;
+}
+#btn {
+    writing-mode: vertical-lr;
+}
+
+/* style for name and landing page */
+#title_page {
+    color: var(--color7);
 }
 #title_info_container {
-    margin-top: 45vh;
+    padding-top: 40vh;
 }
-#name {
+
+/* style for project page */
+.project_page {
+    color: var(--color6);
+}
+.project_container {
+    padding-top: 35vh;
+    padding-bottom: 45vh;
+}
+
+/* content */
+.name {
     margin-top: 0;
     text-align: center;
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 50px;
 }
-#description {
+.description {
     margin-top: 0;
     text-align: center;
-}
-/* style for first project page */
-.project_one {
-    color: var(--text)
-}
-/* style for second project page */
-.project_two{
-    color: var(--text)
-}
-/* style for third project page */
-.project_three {
-    color: var(--text)
 }
 
 
 
 :root{
-    --text: maroon;
+    --color1: #F5E8ED;
+    --color2: #FFCBE1;
+    --color3: #FEB0CB;
+    --color4: #EE988D;
+    --color5: #FF769D;
+    --color6: #EE4D6F;
+    --color7: #E83261;
 }

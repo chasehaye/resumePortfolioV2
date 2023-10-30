@@ -2,7 +2,11 @@
 <html lang="en">
 
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,40 +16,63 @@
 <body>
     <!-- 
         1. create individual pages that scroll for each project
-        2. order is name 
-        workout project under mantinence
-        base gearbox with more to come soon
-        pc builder project under maintinence will come back revamped soon
-        contact page with linkedin github email (create a new email to recieve inquiries at)
         3. floating navbar the pops out with hover
-        4. create creative descriptions
         5. consider a domain beyond hosting default
         6. consider hovering options
      -->
-    <nav id = "nav bar"></nav>
+<nav>
+    <div id="nav_text">
+        <div id="btn">menu btn</div>
+    </div>
+</nav>
+
+
+
+
+
+<div id="main">
     <!-- landing info/page -->
-    <div class = "title_page">
+    <div id = "title_page" class="page">
         <div id = "title_info_container">
-            <h1 id = "name">Chase Haye</h1>
-            <h3 id = "description">Software Engineer</h3>
+            <h1 class = "name">Chase Haye</h1>
+            <h3 class = "description">Software Engineer</h3>
         </div>
     </div>
     <!-- project one page -->
-    <div class = "project_one">
-        <h6>project one</h6>
+    <div class = "project_page page">
+        <div class= "project_container">
+            <h1 class = "name">Fitness App</h1>
+            <h3 class = "description">Health based App revision <br> in progress coming soon</h3>
+        </div>
     </div>
     <!-- project two page -->
-    <div class = "project_two">
-        <h6>project two</h6>
+    <div class = "project_page page">
+        <div class= "project_container">
+            <h1 class = "name">GearBox</h1>
+            <h3 class = "description">social custom car sharing <br> platform for enthusiasts</h3>
+        </div>
     </div>
     <!-- project three page -->
-    <div class = "project_three">
-        <h6>project three</h6>
+    <div class = "project_page page">
+        <div class= "project_container">
+            <h1 class = "name">Pc Builder</h1>
+            <h3 class = "description">platform for people who <br>build Pcs (under maintinence)</h3>
+        </div>
     </div>
-    <!-- foot -->
+
+</div>
+
+
+
+
+
+
+
+<!-- 
     <footer>
         <p>footer</p>
-    </footer>
+    </footer> 
+-->
 
     <script src = "app.js"></script>
 </body>
