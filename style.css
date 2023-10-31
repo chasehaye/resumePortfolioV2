@@ -25,15 +25,22 @@ body {
 #main {
     width: 97.5vw;
 }
+.direct {
+    cursor: pointer;
+}
 /* NavBar */
 nav {
     width: 1.5vw;
 }
 #nav_text {
-    margin-top: 50vh;
+    color: green;
 }
 #btn {
     writing-mode: vertical-lr;
+}
+a {
+    text-decoration: none;
+    color: black;
 }
 
 /* style for name and landing page */
@@ -41,16 +48,21 @@ nav {
     color: var(--color7);
 }
 #title_info_container {
-    padding-top: 40vh;
+    width: 15vw;
+    margin: auto;
+    margin-top: 40vh;
 }
 
 /* style for project page */
 .project_page {
     color: var(--color6);
+    margin-top: 5vh;
 }
 .project_container {
-    padding-top: 35vh;
-    padding-bottom: 45vh;
+    margin: auto;
+    margin-top: 35vh;
+    margin-bottom: 45vh;
+    width: 15vw;
 }
 
 /* content */
@@ -65,7 +77,9 @@ nav {
     text-align: center;
 }
 
-
+#spacer {
+    height: 6vh;
+}
 
 :root{
     --color1: #F5E8ED;
