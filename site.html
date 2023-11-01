@@ -15,13 +15,17 @@
 
 <body>
     <!-- 
-        3. floating navbar the pops out with hover
-        2.consider more design elements to add
-        3.
+        1. floating navbar the pops out with hover
+        2. consider more design elements to add
      -->
 <nav>
-    <div id="nav_text">
-        <div id="btn">menu btn</div>
+    <div class="nav_text">
+        <div class="hook"><a href="#title_page">HOME</a></div>
+        <div class="hook"><a href="#1">FA</a></div>
+        <div class="hook"><a href="#2">GB</a></div>
+        <div class="hook"><a href="#3">PCB</a></div>
+        <div id="modalBtn" class="hook">!modal btn!</div>
+
     </div>
 </nav>
 
@@ -34,55 +38,56 @@
     <div id = "title_page" class="page">
         <div id = "title_info_container" class="direct">
             <a href="test.html" target="_blank">
-            <h1 class = "name">Chase Haye</h1>
-            <h3 class = "description">Software Engineer</h3>
-        </a>
+                <h1 class = "name">Chase Haye</h1>
+                <h3 class = "description">Software Engineer</h3>
+            </a>
         </div>
     </div>
     <!-- project one page -->
-    <div class = "project_page page" >
+    <div class = "project_page page" id="1" >
         <div class= "project_container direct">
             <a href="test.html" target="_blank">
-            <h1 class = "name">Fitness App</h1>
-            <h3 class = "description">Health based App revision <br> in progress coming soon</h3>
-        </a>
+                <h1 class = "name">Fitness App</h1>
+                <h3 class = "description">Health based App revision <br> in progress coming soon</h3>
+            </a>
         </div>
     </div>
     <!-- project two page -->
-    <div class = "project_page page">
+    <div class = "project_page page" id="2" >
         <div class= "project_container direct" >
             <a href="test.html" target="_blank">
-            <h1 class = "name">GearBox</h1>
-            <h3 class = "description">social custom car sharing <br> platform for enthusiasts</h3>
-        </a>
+                <h1 class = "name">GearBox</h1>
+                <h3 class = "description">social custom car sharing <br> platform for enthusiasts</h3>
+            </a>
         </div>
     </div>
     <!-- project three page -->
-    <div class = "project_page page">
+    <div class = "project_page page" id="3" >
         <div class= "project_container direct" >
             <a href="test.html" target="_blank">
-            <h1 class = "name">Pc Builder</h1>
-            <h3 class = "description">platform for people who <br>build Pcs (under maintinence)</h3>
-        </a>
+                <h1 class = "name">Pc Builder</h1>
+                <h3 class = "description">platform for people who <br>build Pcs (under maintinence)</h3>
+            </a>
         </div>
-    <div id="spacer">
 
-    </div>
-    </div>
+        <div id="spacer">
 
+        </div>
+    </div>
+    <!-- info modal -->
+    <div class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>gh linkedin email</p>
+        </div>
+    </div> 
+</div>
+<div id="menuBtn">
+    <div class="bar"></div>
+    <div class="bar"></div>
+    <div class="bar"></div>
 </div>
 
-
-
-
-
-
-
-<!-- 
-    <footer>
-        <p>footer</p>
-    </footer> 
--->
 
     <script src = "app.js"></script>
 </body>
