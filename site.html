@@ -6,7 +6,7 @@
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,8 +15,14 @@
 
 <body>
     <!-- 
-        1. floating navbar the pops out with hover
+        1. add animation to navbar
         2. consider more design elements to add
+        3. polish modal (mobile)
+        4. refine projects
+        5. refine font size and color for page
+        6. add modal links
+        7. add copy to clipboard email function
+        8. refine an easy swap mantinence page
      -->
 <nav>
     <div class="nav_text">
@@ -24,7 +30,7 @@
         <div class="hook"><a href="#1">FA</a></div>
         <div class="hook"><a href="#2">GB</a></div>
         <div class="hook"><a href="#3">PCB</a></div>
-        <div id="modalBtn" class="hook">!modal btn!</div>
+        <div id="modalBtn" class="hook"></div>
 
     </div>
 </nav>
@@ -78,7 +84,16 @@
     <div class="modal">
         <div class="modal-content">
             <span class="close">&times;</span>
-            <p>gh linkedin email</p>
+            <div class="item-title">Get In Touch</div>
+            <div id="modal-links">
+                <div class="item gh"></div>
+                <div class="item in"></div>
+                <div class="item em">
+                    <div id="email">
+                        chasehaye.dev@gmail.com
+                    </div>
+                </div>
+            </div>
         </div>
     </div> 
 </div>

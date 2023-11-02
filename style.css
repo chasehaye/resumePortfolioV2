@@ -31,6 +31,7 @@ body {
 a {
     text-decoration: none;
     color: black;
+    font-family: 'Edu TAS Beginner', cursive;
 }
 /* NavBar */
 
@@ -44,7 +45,7 @@ nav {
     visibility: hidden;
     position: fixed;
     z-index: 1;
-    top: 17%;
+    top: 20%;
 }
 .hook {
     margin-top: 5vh;
@@ -70,6 +71,16 @@ nav {
 }
 #menuBtn:hover > .bar {
     background-color: #aaa;
+}
+#modalBtn {
+    background-image: url('md-contact-48.png');
+    transform: rotate(90deg);
+    background-repeat: no-repeat;
+    height: 49px;
+    cursor: pointer;
+}
+#modalBtn:hover {
+    opacity: 0.6;
 }
 /* style for name and landing page */
 #title_page {
@@ -97,8 +108,8 @@ nav {
 .name {
     margin-top: 0;
     text-align: center;
-    font-family: 'Shadows Into Light', cursive;
     font-size: 50px;
+    font-family: 'Edu TAS Beginner', cursive;
 }
 .description {
     margin-top: 0;
@@ -137,20 +148,62 @@ p {
     /* overflow: auto; Enable scroll if needed */
 }
 .modal-content {
-    background-color: white;
+    background-color: black;
     margin: 15% auto;
     padding: 20px;
-    width: 40%;
+    width: 25vw;
+    height: 25vh;
+    margin-top: 35vh;
+    border-radius: 5vh;
 }
 .close {
     color: #aaa;
     float: right;
     font-size: 28px;
     font-weight: bold;
+    margin-right: 1.5vw;
 }
 .close:hover,
 .close:focus {
-    color: black;
+    color: red;
     text-decoration: none;
     cursor: pointer;
+}
+#modal-links {
+    display: inline-flex;
+}
+.item-title {
+    margin: 0 auto;
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    margin-bottom: 5vh;
+}
+.item {
+    height: 10vh;
+    width: 4vw;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-left: 2vw;
+    margin-right: 2vw;
+}
+.gh {
+    background-image: url('gitHub.PNG');
+}
+.in {
+    background-image: url('linkedinIco.PNG');
+}
+.em {
+    background-image: url('email.PNG');
+}
+#email {
+    color: white;
+    margin-top: 9vh;
+    width: 6.5vw;
+    margin-left: -2vw;
+    height: 1vh;
+    font-size: 18px;
+    font-weight: bold;
+    font-style: italic
 }
