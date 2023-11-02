@@ -196,6 +196,8 @@ p {
 }
 .em {
     background-image: url('email.PNG');
+    cursor: pointer;
+    position: relative;
 }
 #email {
     color: white;
@@ -206,4 +208,26 @@ p {
     font-size: 18px;
     font-weight: bold;
     font-style: italic
+}
+
+
+
+.tooltip {
+    color: white;
+    opacity: 0;
+    width: 0vw;
+}
+.em:hover .tooltip {
+    visibility: visible;
+    width: 140px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px;
+    position: absolute;
+    opacity: 1;
+    transition: opacity 0.3s;
+    top: 0;
+    right: -22%;
 }

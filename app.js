@@ -4,6 +4,7 @@ const navBar = document.querySelector('.nav_text');
 const modal = document.querySelector(".modal");
 const btn = document.getElementById("modalBtn");
 const closeBtn = document.getElementsByClassName("close")[0];
+const emailBtn = document.querySelector('.em');
 
 // NavBar toggle
 function toggleNav(){
@@ -29,3 +30,13 @@ window.onclick = function(e) {
     modal.style.display = "none";
   }
 }
+
+// Copy to clipboard
+
+function copyToClipboard() {
+  const email = 'chasehaye.dev@gmail.com';
+  navigator.clipboard.writeText(email)
+  alert('"chasehaye.dev@gmail.com" copid to clipboard!')
+}
+
+emailBtn.addEventListener('click', copyToClipboard)
