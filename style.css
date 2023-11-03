@@ -33,19 +33,22 @@ a {
     color: black;
     font-family: 'Edu TAS Beginner', cursive;
 }
+a:hover {
+    color: var(--color3);
+}
 /* NavBar */
-
 nav {
     width: 1.5vw;
 }
 .nav_text {
-    font-size: 40px;
+    font-size: 38px;
     writing-mode: vertical-lr;
     display: inline-flex;
     visibility: hidden;
     position: fixed;
     z-index: 1;
-    top: 20%;
+    top: 23%;
+    font-weight: bold;
 }
 .hook {
     margin-top: 5vh;
@@ -70,7 +73,7 @@ nav {
     border-radius: 5px;
 }
 #menuBtn:hover > .bar {
-    background-color: #aaa;
+    background-color: var(--color3);
 }
 #modalBtn {
     background-image: url('md-contact-48.png');
@@ -80,7 +83,7 @@ nav {
     cursor: pointer;
 }
 #modalBtn:hover {
-    opacity: 0.6;
+    opacity: 0.1;
 }
 /* style for name and landing page */
 #title_page {
@@ -103,23 +106,22 @@ nav {
     margin-bottom: 45vh;
     width: 15vw;
 }
-
 /* content */
 .name {
     margin-top: 0;
     text-align: center;
-    font-size: 50px;
+    font-size: 65px;
     font-family: 'Edu TAS Beginner', cursive;
 }
 .description {
     margin-top: 0;
     text-align: center;
+    font-size: 18px;
+    text-align: center;
 }
-
 #spacer {
     height: 6vh;
 }
-
 :root{
     --color1: #F5E8ED;
     --color2: #FFCBE1;
@@ -129,14 +131,9 @@ nav {
     --color6: #EE4D6F;
     --color7: #E83261;
 }
-
-
 p {
     font-size: 100px;
 }
-
-
-
 .modal {
     display: none;
     position: fixed;
@@ -157,7 +154,7 @@ p {
     border-radius: 5vh;
 }
 .close {
-    color: #aaa;
+    color: white;
     float: right;
     font-size: 28px;
     font-weight: bold;
@@ -165,12 +162,12 @@ p {
 }
 .close:hover,
 .close:focus {
-    color: red;
+    color: var(--color3);
     text-decoration: none;
     cursor: pointer;
 }
 #modal-links {
-    display: inline-flex;
+    display: flex;
 }
 .item-title {
     margin: 0 auto;
@@ -178,15 +175,18 @@ p {
     color: white;
     font-size: 30px;
     margin-bottom: 5vh;
+    font-family: 'Edu TAS Beginner', cursive;
+    text-align: center;
+    margin-left: 2vw;
 }
 .item {
-    height: 10vh;
-    width: 4vw;
+    height: 11vh;
+    width: 6vw;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    margin-left: 2vw;
-    margin-right: 2vw;
+    margin-left: 1vw;
+    margin-right: 1vw;
 }
 .gh {
     background-image: url('gitHub.PNG');
@@ -199,35 +199,56 @@ p {
     cursor: pointer;
     position: relative;
 }
-#email {
+.emailModal {
+    display: none;
+    text-align: right;
     color: white;
-    margin-top: 9vh;
-    width: 6.5vw;
-    margin-left: -2vw;
-    height: 1vh;
-    font-size: 18px;
+    font-size: 20px;
+}
+.email {
     font-weight: bold;
-    font-style: italic
+}
+.emailBr {
+    display: none;
 }
 
-
-
-.tooltip {
-    color: white;
-    opacity: 0;
-    width: 0vw;
+@media (max-width:1850px){
+    #modal-links {
+        flex-direction: column;
+    }
+    .item {
+        margin: 0 auto;
+        margin-bottom: 2vh;
+        height: 10vh;
+        width: 10vh;
+    }
+    .modal-content {
+        height: 60vh;
+        margin-top: 20vh;
+    }
+    .emailModal {
+        text-align: center;
+        margin: 0 auto;
+    }
 }
-.em:hover .tooltip {
-    visibility: visible;
-    width: 140px;
-    background-color: #555;
-    color: #fff;
-    text-align: center;
-    border-radius: 6px;
-    padding: 5px;
-    position: absolute;
-    opacity: 1;
-    transition: opacity 0.3s;
-    top: 0;
-    right: -22%;
+
+@media  (max-width:500px){
+    .modal-content {
+        height: 45vh;
+        margin-top: 25vh;
+        border-radius: 3vh;
+    }
+    .item {
+        width: 7vh;
+        height: 7vh;
+    }
+    .item-title {
+        font-size: 12px;
+    }
+}
+
+@media (max-width:700px){
+    .emailBr {
+        display: block;
+    }
 }

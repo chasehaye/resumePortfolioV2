@@ -37,3 +37,6 @@ a {
     margin: 0 auto;
     margin-top: 1.3vh;
 }
+.home:hover {
+    color: darkgray;
+}
